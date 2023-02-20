@@ -1,0 +1,252 @@
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6B7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5CF6;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--dark);
+    color: #fff; 
+}
+
+h1 {
+	font-size: 1.7em;
+}
+.hidden{
+    display: none;
+}
+header{
+    padding: 0rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 0 0;
+}
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+#new-group-form{
+    display: flex;
+
+}
+
+#dialogue-page .event-data {
+	width: 100%;
+	text-align: center;
+	clear: both;
+}
+
+#dialogue-page .event-data p {
+	color: #777;
+	font-size: 14px;
+	word-wrap: break-word;
+}
+
+#name{
+    background: white;
+}
+
+#nick{
+    background: white;
+}
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-group-input{
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    color: var(--light);
+    font-size: 1.25rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+
+}
+
+.actions{
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    color: var(--light);
+    font-size: 1.25rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+
+}
+
+#new-group-submit{
+    color:var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink),
+    var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+#new-group-submit:hover{
+    opacity: 0.8;
+}
+
+#new-group-submit:active{
+    opacity: 0.6;
+}
+
+main{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    flex: 0 1 0%;
+    padding: 0rem 1rem;
+    
+    max-width: 800px;
+    width: 100%;
+    
+}
+
+.group-list{
+    float:left;
+    padding: 2rem;
+    width:400px;
+    flex-basis: calc(50% - 2rem);
+    
+    flex-wrap: nowrap;
+}
+
+.group-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+#groups{
+    height: 600px;
+    overflow-y: auto;
+}
+#groups .group{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#groups .group .content .text{
+    color:var(--light);
+    font-size: 1.125rem;
+    width: 100%;
+    
+}
+
+#groups .group .content .text:not(:read-only){
+    color: var(--pink);
+}
+
+#groups .group .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.group .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.group .actions .edit{
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: medium;
+}
+
+.chat{
+    flex-basis: calc(50% - 2rem);
+    margin-left: 400px;
+    padding: 2rem;
+    
+}
+.chat h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+#chats{
+    width:700px;
+}
+
+.text-chat{
+    background-color: var(--darkest);
+    
+    height: 700px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+}
+
+.whole-area .chat #chats .chat-box-input{
+    width: 500px;
+    display:flex;
+}
+
+#chatInput{
+    background-color: var(--darker);
+    color: var(--light);
+    font-size: 1.25rem;
+    width: 600px;
+    overflow-y: auto;
+}
+
+.submitMsg{
+   display: inline-table;
+   color:var(--pink);
+   font-size: 1.25rem;
+   font-weight: 700;
+   background-image: linear-gradient(to right, var(--pink),
+   var(--purple));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.username-submit{
+    display: inline-table;
+   color:var(--pink);
+   font-size: 1.25rem;
+   font-weight: 700;
+   background-image: linear-gradient(to right, var(--pink),
+   var(--purple));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+}
+
